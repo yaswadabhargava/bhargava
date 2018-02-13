@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ticket booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <center><h1>TickeT BooKing</h1></center>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+                <li><a style="text-decoration: none;" rel="Click here" href="home.html"> Home</a></li>
+               <li><a style="text-decoration: none;" rel="Click here" href="contacts.html">Contact</a></li>
+                <li><a style="text-decoration: none;" rel="Click here" href="blog.html">Blog</a></li>
+                <li><a style="text-decoration: none;" rel="Click here" href="#">Logout</a></li>
+
+  </ul>
+</div>
+<div class="col-9">
+<pre><span class="inner-pre" style="font-size: 20px">
+Name                  : <input type="text" name="t1" size="30" placeholder="Name" > <br>
+email                 : <input type="text" name="t1" size="30" placeholder="Email"> <br>
+Package name          : <select>
+  <option value=""></option>
+  <option value="London">London</option>
+  <option value="Barcelona">Barcelona</option>
+  <option value="Goa">Goa</option>
+  <option value="Paris">Paris</option>
+  <option value="New Zeland">New Zeland</option>
+  <option value="France">France</option>
+  <option value="Cannada">Cannada</option>
+  <option value="Turkey">Turkey</option>
+  <option value="Egypt">Egypt</option>
+  <option value="Japan">Japan</option>
+  <option value="Brazil">Brazil</option>
+  <option value="Diseny Land">Diseny Land</option>
+<option value="Bali">Bali</option>
+</select><br>
+Arrival               : <input type="date" name="t1" size="50"> <br>
+Departure             : <input type="date" name="t1" size="50"> <br>
+Mode of Transport     :  <input type="radio" name="t1" value="Bus"> Bus  <input type="radio" name="t1" value="Train"> Train <input type="radio" name="t1" value="Flight"> Flight<br>
+Comfort               :  <input type="radio" name="t1" value="Cheap"> Cheap <input type="radio" name="t1" value="Standard"> standard <input type="radio" name="t1" value="Luxury"> Luxury <br>
+Number of Passengers  : Adults <input type="Number" name="t1" value=" ">   Children <input type="Number" name="t1" value=" ">  
+<br>
+Payment               :  <input type="radio" name="t1" value="Debit"> Debit  <input type="radio" name="t1" value="Credit"> Credit<br>
+Card Number           :<input type="Number" name="t1"  size="16"  required placeholder="card number"><br>
+Cvv                   :<input type="Number" name="t2" size="3" placeholder="last three digits"><br>
+Expiry date           :<input type="date" name="t1" value="date"><br>
+Card Holder           :<input type="text" name="t1" placeholder="Name on the card"><br>
+Pay Via Paytm         : 9533810041
+                        <img src="C:\Users\dell i7\Desktop\tours ans trabels\your-trip\site\images\paytm.png" width="" height="">
+<input type="submit"  value="submit" width="20 px" height="20 px">
+</div>
+</span></pre>
+</div>
+
+</body>
+</html>

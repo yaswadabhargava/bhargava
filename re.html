@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>registration form</title>
+
+</head>
+ <style>
+                                #menu{
+                        background-color: #16A085  ; top left;
+                        height: 73px;
+                        width: 600px;
+                        margin: 0 auto;
+                        margin-bottom: 50px;
+                    }
+
+                    #menu ul{
+                        padding-left: 0px;
+                        list-style: none;
+                        width: 800px;
+                        margin: 0 auto;
+                    }
+
+                    #menu ul li{
+                        display: inline;
+                    }
+
+                    #menu ul li a{
+                        font-size: 22px ;
+                        font-family: 'Merienda One', cursive;
+                        color: #17202A;
+                        text-align: center;
+                        font-weight: normal;
+                        text-decoration: none;
+                        display: block;
+                        float: left;
+                        width: 160px;
+                        height: 65px;
+                        padding-top: 5px;
+                        line-height: 70px;
+                    }
+
+                    #menu ul li a:hover{
+                        color: #A9A9A9;
+                        text-decoration: underline;
+                        background: url(images/menu_r.png) top left;
+                    }
+</style>
+    </head>
+<body bgimg src="images/12.png" alt="Your Trip">
+ <div id="menu">
+            <ul>
+                
+                <li><a href="home.html" class="active"> Home</a></li>
+               <li><a href="contacts.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+               
+           
+                </ul>
+                 <center>
+                            <br>
+                            <img src="images/1.png" alt="Your Trip" height="250" width="400">
+                        </center>
+            <div class="clear"></div>
+<h2 ALIGN="CENTER">Registration form</h2>
+
+<form action="re.html" method="post">
+<table border= "" align="center">
+<tbody>
+
+<tr>
+<td><label for="name">Name: </label></td>
+<td><div class="tmInput">
+								<input name="Name" placeHolder="Name" type="text" data-constraints="@NotEmpty @Required @Alphaspecial">
+							</div></td>
+</tr>
+
+<tr>
+<td><label for="Mobile">Mobile: </label></td>
+<td><div class="tmInput">
+								<input name="Mobile" placeHolder="Mobile Number" type="Number" min="7000000000" max="9000000000" required>
+							</div></td>
+</tr>
+
+<tr>
+<td><label for="email">email:</label></td>
+<td><input type="mail" placeholder="Enter mail" name="Email_Address" required="Email_Address"></td>
+</tr>
+
+<tr>
+<td><label for="username">Username:</label></td>
+<td><input id="username" maxlength="50" placeholder="User_Name" name="username" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="password">Password:</label></td>
+<td><input id="password" maxlength="50" name="password" type="password" /></td>
+</tr>
+
+<tr>
+<centre>
+<td align="right"><input name="Submit" type="Submit" value="Submit"/>
+</centre>
+</td>
+</tr>
+
+</tbody>
+</table>
+</form>
+</html>

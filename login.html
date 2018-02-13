@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <style>
+                                #menu{
+                        background-color: #16A085  ; top left;
+                        height: 73px;
+                        width: 1000px;
+                        margin: 0 auto;
+                        margin-bottom: 50px;
+                    }
+
+                    #menu ul{
+                        padding-left: 0px;
+                        list-style: none;
+                        width: 800px;
+                        margin: 0 auto;
+                    }
+
+                    #menu ul li{
+                        display: inline;
+                    }
+
+                    #menu ul li a{
+                        font-size: 22px ;
+                        font-family: 'Merienda One', cursive;
+                        color: #17202A;
+                        text-align: center;
+                        font-weight: normal;
+                        text-decoration: none;
+                        display: block;
+                        float: left;
+                        width: 160px;
+                        height: 65px;
+                        padding-top: 5px;
+                        line-height: 70px;
+                    }
+
+                    #menu ul li a:hover{
+                        color: #A9A9A9;
+                        text-decoration: underline;
+                        background: url(images/menu_r.png) top left;
+                    }
+</style>
+    </head>
+<body bgimg=src="images/12.png" alt="Your Trip">
+ <div id="menu">
+            <ul>
+                
+                <li><a href="home.html" class="active"> Home</a></li>
+               <li><a href="contacts.html">Contact</a></li>
+                <li><a href="#">WELCOME  </a></li>
+                <li><a href="#">Registration</a></li>
+                 <li><a href="#">LogOut</a></li>
+           
+                </ul>
+            <div class="clear"></div>
+
+          <script>
+                <%
+                if(request.getParameter("msg")!=null)
+                {%>
+                </script>
+             <script>alert('Please Enter Correct Username and Password ');
+              <%} 
+            </script>
+                <script>
+                if(request.getParameter("nmsg")!=null)
+                    {%>
+                    </script>
+                 <script>alert('You are not Activated');
+                    <%}
+                    %>
+                    </script>
+                     <div> 
+                        <center>
+                            <br>
+                            <img src="images/1.png" alt="Your Trip" height="300" width="400">
+                        </center>
+                    </div>
+                        
+                           
+                         <center>
+                            <br>
+
+                            <div class="container">
+                                <label><b>Username :</b></label>
+                                <input type="text" placeholder= "Enter Username" name="uname" required> <br>
+                                <br>
+
+                                <label><b>Password :</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                                <br>
+                                <button type="submit">Login</button> <input type="Reset"><br>
+       
+
+                             </div>
+                        </center>
+        </body>
+</html>
