@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+
+<style type="text/css">
+	.row {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container
+{
+	width: 100vw !important;
+}
+</style>
+
+<script type="text/javascript">
+	$(function() { 
+   $('#datepicker1').datepicker( {
+        changeMonth: false,
+        changeYear: true,
+        showButtonPanel: false,
+        dateFormat: 'yy',
+        onClose: function(dateText, inst) { 
+              $(this).datepicker('setDate', new Date('2018'));
+        }
+    }).focus(function () {
+                $(".ui-datepicker-month").hide();
+                $(".ui-datepicker-calendar").hide();
+            });
+});
+
+</script>
+</head>
+<body>
+<div class="container">
+
+	<div class="row">
+	<div id="font" style="background:#b2bdb5;border:1px solid #b2bdb5;">
+            <center><h2>Registration from</h2></center>
+                </div><br><br>
+	  <form role="form">
+
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Academic session">Academic session</label>
+            <input type="Year" class="form-control" id="datepicker1" placeholder="Year">
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Admission Date">Admission Date</label>
+            <input type="Date" class="form-control" id="datepicker2" placeholder="Admission Date">
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Admission number">Admission number</label>
+            <input type="number" class="form-control" id="Admission" placeholder="Admission number">
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Alternative number">Alternative phne no</label>
+            <input type="mobile" class="form-control" id="" placeholder="mobile">
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Student Name">Student Name</label>
+            <input type="text" class="form-control" id="" placeholder="Full Name">
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Father Occupation">Father Occupation</label>
+            <input type="Text" class="form-control" id="" placeholder="Occupation">
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="DOB">DOB</label>
+            <input type="Date" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label>Gender<br>
+                <input type="radio"> Male<input type="radio">Female
+            </label>
+        </div>
+         <div class="clearfix"></div>
+
+         <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Mother Tongue">Mother Tongue</label>
+            <input type="text" class="form-control" id="" placeholder="Mother Tongue">
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Admission Class">Admission Class</label><br>
+            <select >
+            <option> </option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+         </select>
+           
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Father Name">Father Name</label>
+            <input type="text" class="form-control" id="" placeholder="Name">
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Section">Section</label><br>
+            <select><option></option><option>A</option><option>B</option><option>C</option></select>
+         </div>
+        <div class="clearfix"></div>
+
+          <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Mother Name">Mother Name</label>
+            <input type="text" class="form-control" id="" placeholder="Name">
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Language">Language</label><br>
+            <select><option></option><option>English</option><option>Telugu</option><option>Hindi</option></select>
+         </div>
+        <div class="clearfix"></div>
+
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Academic session">Address</label><br>
+            <textarea for="Address" rows="4" cols="45"></textarea>
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="Medium">Medium</label>
+            <input type="checkbox" name="English" value="English"> English
+  <input type="checkbox" name="Telugu" value="Telugu"> Telugu
+            <input type="checkbox" name="Hindi" value="Hindi"> Hindi<br>
+ 
+             <label for="Hostel">Hostel</label>
+            <input type="checkbox" name="" value=""> <br>
+
+            <label for="Transport Facility">Transport Facility</label>
+            <input type="checkbox" name="" value=""> <br>
+
+            <label for="Blood Group">Blood Group</label>
+            <input type="checkbox" name="" value=""> 
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <label for="mobile">Mobile Number</label>
+            <input type="Mobile" class="form-control" id="" placeholder="mobile"><br>
+            <label for="Religion">Religion</label>
+            <input type="Number" class="form-control" id="" placeholder="Religion"><br>
+            <label for="Board">Board</label>
+           <select><option></option><option>CBSE</option><option>SSC</option></select>
+            
+            
+        </div>
+        <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <h3>Fee Structure</h3>
+            <label for="Amount">Amount</label>
+            <input type="Number" class="form-control" id="" placeholder="Amount"><button type="button" class="btn btn-success">Save</button>
+             <button type="button" class="btn btn-danger">Cancel</button>
+              <button type="button" class="btn btn-default">Home</button><br><br>
+
+            <label for="Paid Money">Money payment</label><br>
+             <label for="Paid Monthly">Paid Monthly</label>
+            <input type="checkbox" name="" value=""> 
+             <label for="Termly">Termly</label>
+            <input type="checkbox" name="" value=""> 
+            
+
+        </div>
+        <div class="clearfix"></div>
+      
+        <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+
+        
+    </form>
+    <div class="clearfix"></div>
+
+    <br /><br />
+	</div>
+	
+</div>
+
+</body>
+</html>
